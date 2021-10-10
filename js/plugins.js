@@ -6,9 +6,6 @@
 //   |_|    |_|\__,_|\__, |_|_| |_|___/
 //                    __/ |            
 //                   |___/             
-//
-//   Required plugins for Slides JS
-//   https://designmodo.com/slides/
 
 if (window.pluginsAttached){alert("Attention: plugins.js library is attached twice and needs to be removed. The slides.min.js already contains both of scripts.");}else{window.pluginsAttached=1;}
 
