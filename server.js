@@ -3,10 +3,10 @@ const fs = require('fs');
 const http = require("http");
 const domain = "cabot-bot.xyz";
 
-const express = require('express')
-const app = express()
-const path = require('path')
-const port = 5000
+const express = require('express');
+const app = express();
+const path = require('path');
+const port = process.env.PORT;
 
 const router = express.Router();
 
