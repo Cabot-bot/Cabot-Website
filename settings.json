@@ -1,9 +1,0 @@
-{
-    "website": {
-        "name": "Cabot",
-        "avatar": "https://witchie-me.xyz/img/profile.png",
-        "invite": "https://discord.com/api/oauth2/authorize?client_id=882064634180427847&permissions=157572000833&scope=bot%20applications.commands",
-        "vote": "https://top.gg/bot/882064634180427847/vote/",
-        "support": "https://discord.gg/Gjjq7MmssX"
-    }
-}
