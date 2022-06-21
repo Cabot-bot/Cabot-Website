@@ -2,10 +2,10 @@
   "name": "cabot-web-remake",
   "version": "1.0.0",
   "description": "Amazing website with good UI design for new Discord bots, designed with Bootstrap & now-ui-kit available in English and Arabic.",
-  "main": "functions/server.js",
+  "main": "server.js",
   "scripts": {
-    "build": "netlify-lambda build express",
-    "start": "nodemon server-local.js"
+    "node": "node server.js",
+    "test": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",

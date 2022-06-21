@@ -1,17 +1,12 @@
-'use strict';
-
-
 const { readdirSync } = require('fs');
 const fs = require('fs');
 const http = require("http");
-const settings = require("../settings.json");
 const domain = "cabot-bot.xyz";
 
 const express = require('express')
 const app = express()
 const path = require('path')
 const port = 5000
-const serverless = require('serverless-http');
 
 const router = express.Router();
 
@@ -118,8 +113,7 @@ router.get("*", (req, res) => {
 });
 
 
-app.use('/.netlify/functions/server', router);  // path must route to lambda
-app.use('/abouttest', (req, res) => res.sendFile(path.join(__dirname, 'src/about.html')));
 
-module.exports = app;
-module.exports.handler = serverless(app);
+app.listen(port, () => { 
+  console.log(`Dashboard is up and running on port ${port}`)
+})
