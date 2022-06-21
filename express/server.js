@@ -35,9 +35,17 @@ router.get('/', (req, res) => {
 })
 
 
+router.use('/abouttest', (req, res) => {
+  res.sendFile('src/about.html', {
+      root: path.join(__dirname, './')
+  })
+})
+
 //pages
 router.get('/about', (req, res) => {
-  res.render('about')
+  res.sendFile('src/about.html', {
+      root: path.join(__dirname, './')
+  })
 })
 router.get('/features', (req, res) => {
   res.sendFile('src/features.html', {
