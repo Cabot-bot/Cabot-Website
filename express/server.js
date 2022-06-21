@@ -4,7 +4,7 @@
 const { readdirSync } = require('fs');
 const fs = require('fs');
 const http = require("http");
-const settings = require("./settings.json");
+const settings = require("../settings.json");
 const domain = "cabot-bot.xyz";
 
 const express = require('express')
