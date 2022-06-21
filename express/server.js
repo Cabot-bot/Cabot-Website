@@ -35,7 +35,7 @@ router.get('/', (req, res) => {
 })
 
 
-router.use('/abouttest', (req, res) => {
+app.use('/abouttest', (req, res) => {
   res.sendFile('src/about.html', {
       root: path.join(__dirname, './')
   })
