@@ -1,3 +1,6 @@
+'use strict';
+
+
 const { readdirSync } = require('fs');
 const fs = require('fs');
 const http = require("http");
@@ -8,6 +11,9 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const port = 5000
+const serverless = require('serverless-http');
+
+const router = express.Router();
 
 // Set view engine as EJS
 app.engine('html', require('ejs').renderFile);
@@ -22,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'src')));
 app.set('views', path.join(__dirname, 'src'));
 
 //main
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
   res.sendFile('src/index.html', {
       root: path.join(__dirname, './')
   })
@@ -30,70 +36,70 @@ app.get('/', (req, res) => {
 
 
 //pages
-app.get('/about', (req, res) => {
+router.get('/about', (req, res) => {
   res.render('about')
 })
-app.get('/features', (req, res) => {
+router.get('/features', (req, res) => {
   res.sendFile('src/features.html', {
       root: path.join(__dirname, './')
   })
 })
-app.get('/commands', (req, res) => {
+router.get('/commands', (req, res) => {
   res.sendFile('src/features.html', {
       root: path.join(__dirname, './')
   })
 })
-app.get('/privacy', (req, res) => {
+router.get('/privacy', (req, res) => {
   res.sendFile('src/privacy.html', {
       root: path.join(__dirname, './')
   })
 })
-app.get('/terms', (req, res) => {
+router.get('/terms', (req, res) => {
   res.sendFile('src/terms.html', {
       root: path.join(__dirname, './')
   })
 })
-app.get('/legal', (req, res) => {
+router.get('/legal', (req, res) => {
   res.sendFile('src/legal.html', {
       root: path.join(__dirname, './')
   })
 })
-app.get('/credits', (req, res) => {
+router.get('/credits', (req, res) => {
   res.sendFile('src/credits.html', {
       root: path.join(__dirname, './')
   })
 })
 
 //coming soon
-app.get('/blog', (req, res) => {
+router.get('/blog', (req, res) => {
   res.render('comingSoon')
 })
-app.get('/library', (req, res) => {
+router.get('/library', (req, res) => {
   res.render('comingSoon')
 })
-app.get('/api', (req, res) => {
+router.get('/api', (req, res) => {
   res.render('comingSoon')
 })
 
 
 //redirects
-app.get('/invite', (req, res) => {
+router.get('/invite', (req, res) => {
   res.redirect('https://discord.com/api/oauth2/authorize?client_id=882064634180427847&permissions=157572000833&scope=bot%20applications.commands')
 })
-app.get('/support', (req, res) => {
+router.get('/support', (req, res) => {
   res.redirect('https://discord.gg/Gjjq7MmssX')
 })
-app.get('/instagram', (req, res) => {
+router.get('/instagram', (req, res) => {
   res.redirect('https://www.instagram.com/cabot.bot.xyz/')
 })
 
 
 //lol
-app.get('/secret', (req, res) => {
+router.get('/secret', (req, res) => {
   res.send('No secrets here! lol')
 })
 
-app.get("*", (req, res) => {
+router.get("*", (req, res) => {
   var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
 
 
@@ -110,4 +116,7 @@ app.get("*", (req, res) => {
 });
 
 
-app.listen(port, () => console.log(`App listening on port ${port}!`))
+app.use('/.netlify/functions/server', router);  // path must route to lambda
+
+module.exports = app;
+module.exports.handler = serverless(app);
