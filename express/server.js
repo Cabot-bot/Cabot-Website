@@ -35,12 +35,6 @@ router.get('/', (req, res) => {
 })
 
 
-app.use('/abouttest', (req, res) => {
-  res.sendFile('src/about.html', {
-      root: path.join(__dirname, './')
-  })
-})
-
 //pages
 router.get('/about', (req, res) => {
   res.sendFile('src/about.html', {
@@ -125,6 +119,7 @@ router.get("*", (req, res) => {
 
 
 app.use('/.netlify/functions/server', router);  // path must route to lambda
+app.use('/abouttest', (req, res) => res.sendFile(path.join(__dirname, 'src/about.html')));
 
 module.exports = app;
 module.exports.handler = serverless(app);
