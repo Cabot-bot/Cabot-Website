@@ -22,7 +22,7 @@ app.set('views', path.join(__dirname, 'src'));
 
 //main
 app.get('/', (req, res) => {
-  res.sendFile('src/index.html', {
+  res.sendFile('index.html', {
       root: path.join(__dirname, './')
   })
 })
@@ -30,37 +30,37 @@ app.get('/', (req, res) => {
 
 //pages
 app.get('/about', (req, res) => {
-  res.sendFile('src/about.html', {
+  res.sendFile('about.html', {
       root: path.join(__dirname, './')
   })
 })
 app.get('/features', (req, res) => {
-  res.sendFile('src/features.html', {
+  res.sendFile('features.html', {
       root: path.join(__dirname, './')
   })
 })
 app.get('/commands', (req, res) => {
-  res.sendFile('src/features.html', {
+  res.sendFile('features.html', {
       root: path.join(__dirname, './')
   })
 })
 app.get('/privacy', (req, res) => {
-  res.sendFile('src/privacy.html', {
+  res.sendFile('privacy.html', {
       root: path.join(__dirname, './')
   })
 })
 app.get('/terms', (req, res) => {
-  res.sendFile('src/terms.html', {
+  res.sendFile('terms.html', {
       root: path.join(__dirname, './')
   })
 })
 app.get('/legal', (req, res) => {
-  res.sendFile('src/legal.html', {
+  res.sendFile('legal.html', {
       root: path.join(__dirname, './')
   })
 })
 app.get('/credits', (req, res) => {
-  res.sendFile('src/credits.html', {
+  res.sendFile('credits.html', {
       root: path.join(__dirname, './')
   })
 })
