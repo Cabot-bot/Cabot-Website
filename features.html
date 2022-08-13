@@ -84,40 +84,36 @@
                         <a href=""><img src="https://<%= hostname %>/modules/commands.png" alt=""> <span class="cmdFilterName">All Commands</span></a>
                      </div>
                      <div class="cmdFilter altarSelector">
-                        <a href="#altar"><img src="https://<%= hostname %>/modules/altar.png" alt=""> <span class="cmdFilterName">altar</span></a>
+                        <a href="#altar"><img src="https://<%= hostname %>/modules/altar.png" alt=""> <span class="cmdFilterName">Divination</span></a>
                      </div>
                      <div class="cmdFilter funSelector">
-                        <a href="#fun"><img src="https://<%= hostname %>/modules/economy.png" alt=""> <span class="cmdFilterName">Economy Commands</span></a>
+                        <a href="#fun"><img src="https://<%= hostname %>/modules/economy.png" alt=""> <span class="cmdFilterName">Occult</span></a>
                      </div>
                      <div class="cmdFilter gamesSelector">
-                        <a href="#games"><img src="https://<%= hostname %>/modules/divination.png" alt=""> <span class="cmdFilterName">Divination Commands</span></a>
+                        <a href="#games"><img src="https://<%= hostname %>/modules/divination.png" alt=""> <span class="cmdFilterName">Spiritual</span></a>
                      </div>
                      <div class="cmdFilter serverSelector">
-                        <a href="#server"><img src="https://<%= hostname %>/modules/occult.png" alt=""> <span class="cmdFilterName">Occult Commands</span></a>
+                        <a href="#server"><img src="https://<%= hostname %>/modules/occult.png" alt=""> <span class="cmdFilterName">Misc</span></a>
                      </div>
                      <div class="cmdFilter moderationSelector">
-                        <a href="#moderation"><img src="https://<%= hostname %>/modules/moderation.png" alt=""> <span class="cmdFilterName">Moderation Commands</span></a>
+                        <a href="#moderation"><img src="https://<%= hostname %>/modules/moderation.png" alt=""> <span class="cmdFilterName">Info</span></a>
                      </div>
-                     <div class="cmdFilter infoSelector">
-                        <a href="#info"><img src="https://<%= hostname %>/modules/info.png" alt=""> <span class="cmdFilterName">Info Commands</span></a>
-                     </div>
-                      
                      <div class="separator"></div>
                      <h5>Other Stuff</h5>
                      <div class="cmdFilter">
-                        <a href="/invite"><span class="cmdFilterName">Invite Me</span></a>
+                        <a href="https://discord.com/api/oauth2/authorize?client_id=882064634180427847&permissions=157572000833&scope=bot%20applications.commands"><span class="cmdFilterName">Invite Me</span></a>
                      </div>
                       <div class="cmdFilter" style="cursor: pointer;">
-                       <a href="/"><span class="cmdFilterName">Home</a></span>
+                       <a href="/index"><span class="cmdFilterName">Home</a></span>
                      </div>
                   </div>
                </div>
                <main>
                   <div class="cmdCategory" id="altar">
-                     <h5 class="cmdCategoryName">Altar</h5>
+                     <h5 class="cmdCategoryName">Divination</h5>
                      <div class="cmd">
                         <div class="cmdComps">
-                           <span class="cmdPrefix"><%= prefix %></span>altar
+                           <span class="cmdPrefix"><%= prefix %></span>8ball
                            <div class="cmdDesc">Ask yourself a question and then type in the command to generate one of the 13 witches runes!</div>
                         </div>
                         <div class="cmdData">
@@ -178,7 +174,7 @@
                   </div>
                   <div class="cmds">
                      <div class="cmdCategory" id="fun">
-                        <h5 class="cmdCategoryName">Economy Commands</h5>
+                        <h5 class="cmdCategoryName">Occult</h5>
                         <div class="cmd">
                            <div class="cmdComps">
                               <span class="cmdPrefix"><%= prefix %></span>altar
@@ -343,7 +339,7 @@
                         </div>   
                      </div>
                      <div class="cmdCategory" id="games">
-                        <h5 class="cmdCategoryName">Divination</h5>
+                        <h5 class="cmdCategoryName">Spiritual</h5>
                         <div class="cmd">
                            <div class="cmdComps">
                               <span class="cmdPrefix"><%= prefix %></span>witches runes
@@ -408,7 +404,7 @@
                         </div>
                      </div>
                      <div class="cmdCategory" id="server">
-                        <h5 class="cmdCategoryName">Occult</h5>
+                        <h5 class="cmdCategoryName">Misc</h5>
                         <div class="cmd">
                            <div class="cmdComps">
                               <span class="cmdPrefix"><%= prefix %></span>moon
@@ -453,7 +449,7 @@
                         </div>                        
                      </div>
                      <div class="cmdCategory" id="moderation">
-                        <h5 class="cmdCategoryName">Moderation commands</h5>
+                        <h5 class="cmdCategoryName">Info</h5>
                         <div class="cmd">
                            <div class="cmdComps">
                               <span class="cmdPrefix"><%= prefix %></span>ban
@@ -609,86 +605,6 @@
                                     <div class="exComp">
                                         <span class="cmdsPrefix"><%= prefix %></span>unban 12345<br>
                                         <span class="cmdsPrefix"><%= prefix %></span>unban 12345 98765<br>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="cmdCategory" id="info">
-                        <h5 class="cmdCategoryName">Info Commands</h5>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>Channel Info
-                              <div class="cmdDesc">Sends channel info</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>channelinfo &lt;#channel&gt;</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>help
-                              <div class="cmdDesc">for more info</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>help</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>ping
-                              <div class="cmdDesc">See bot's latency</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>ping</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>server info
-                              <div class="cmdDesc">Sends server info</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>serverinfo</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>inviter
-                              <div class="cmdDesc">ends server invites info per user</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>inviter [user]</div>
-                                 </div>
-                                 <div class="cmdExample cmdMain">
-                                    <span class="cmdCompTitle">Examples:</span>
-                                    <div class="exComp">
-                                        <span class="cmdsPrefix"><%= prefix %></span>inviter<br>
-                                        <span class="cmdsPrefix"><%= prefix %></span>inviter @Witchie#0999
                                     </div>
                                  </div>
                               </div>
