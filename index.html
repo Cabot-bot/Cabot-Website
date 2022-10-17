@@ -76,6 +76,10 @@
         <button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;" href="https://discord.com/api/oauth2/authorize?client_id=882064634180427847&permissions=157572000833&scope=bot%20applications.commands">INVITE</button>
     </div>
 </nav>
+<div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    Live event! Cabot Halloween 2022 🎃 | Click <a href="http://support.cabot-bot.xyz/"> Here!</a> to join support server!
+  </div>
 <div class="heading">
     <img align="right" src="src/assets/rediseño8.png" width="500px"  style="right: 500px !important" >
     <h1 class="display-5 title">Cabot - Explore, Learn, Divinate</h1>
@@ -112,13 +116,13 @@
     <div class="cards">
         <div class="card statistic" style="width: 18rem;">
             <div class="card-body">
-                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">990 + </h1>
+                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">1.3K + </h1>
                 <p style="font-weight: bold !important;font-size: 20px !important;">servers</p>
             </div>
         </div>
         <div class="card statistic" style="width: 18rem;">
             <div class="card-body">
-                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">5000 +</h1>
+                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">12,000 +</h1>
                 <p style="font-weight: bold !important;font-size: 20px !important;">users</p>
             </div>
         </div>
@@ -155,5 +159,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="src/js/now-ui-kit.min.js"></script>
+<script> 
+// Get all elements with class="closebtn"
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+// Loop through all close buttons
+for (i = 0; i < close.length; i++) {
+  // When someone clicks on a close button
+  close[i].onclick = function(){
+
+    // Get the parent of <span class="closebtn"> (<div class="alert">)
+    var div = this.parentElement;
+
+    // Set the opacity of div to 0 (transparent)
+    div.style.opacity = "0";
+
+    // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
 </body>
 </html>
