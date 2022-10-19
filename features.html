@@ -68,559 +68,206 @@
              <button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;" href="https://discord.com/api/oauth2/authorize?client_id=882064634180427847&permissions=157572000833&scope=bot%20applications.commands">INVITE</button>
          </div>
      </nav>
-      <div class="cmdsBox" >
-         <div class="cmdsBoxInner">
-            <header>
-               <div class="menuIcon">
-                  <div class="menuIconDashes">
-         
-               </div>
-            </header>
-            <div class="cmdsBoxCmdsContainer" style="padding-top: 60px">
-               <div class="cmdFilters">
-                  <div>
-                     <h5>Commands</h5>
-                     <div class="cmdFilter active">
-                        <a href=""><img src="https://<%= hostname %>/modules/commands.png" alt=""> <span class="cmdFilterName">All Commands</span></a>
-                     </div>
-                     <div class="cmdFilter altarSelector">
-                        <a href="#altar"><img src="https://<%= hostname %>/modules/altar.png" alt=""> <span class="cmdFilterName">Divination</span></a>
-                     </div>
-                     <div class="cmdFilter funSelector">
-                        <a href="#fun"><img src="https://<%= hostname %>/modules/economy.png" alt=""> <span class="cmdFilterName">Occult</span></a>
-                     </div>
-                     <div class="cmdFilter gamesSelector">
-                        <a href="#games"><img src="https://<%= hostname %>/modules/divination.png" alt=""> <span class="cmdFilterName">Spiritual</span></a>
-                     </div>
-                     <div class="cmdFilter serverSelector">
-                        <a href="#server"><img src="https://<%= hostname %>/modules/occult.png" alt=""> <span class="cmdFilterName">Misc</span></a>
-                     </div>
-                     <div class="cmdFilter moderationSelector">
-                        <a href="#moderation"><img src="https://<%= hostname %>/modules/moderation.png" alt=""> <span class="cmdFilterName">Info</span></a>
-                     </div>
-                     <div class="separator"></div>
-                     <h5>Other Stuff</h5>
-                     <div class="cmdFilter">
-                        <a href="https://discord.com/api/oauth2/authorize?client_id=882064634180427847&permissions=157572000833&scope=bot%20applications.commands"><span class="cmdFilterName">Invite Me</span></a>
-                     </div>
-                      <div class="cmdFilter" style="cursor: pointer;">
-                       <a href="/index"><span class="cmdFilterName">Home</a></span>
-                     </div>
-                  </div>
-               </div>
-               <main>
-                  <div class="cmdCategory" id="altar">
-                     <h5 class="cmdCategoryName">Divination</h5>
-                     <div class="cmd">
-                        <div class="cmdComps">
-                           <span class="cmdPrefix"><%= prefix %></span>8ball
-                           <div class="cmdDesc">Ask yourself a question and then type in the command to generate one of the 13 witches runes!</div>
-                        </div>
-                        <div class="cmdData">
-                           <div class="cmdComps2">
-                              <div class="cmdUsage cmdMain">
-                                 <span class="cmdCompTitle">Usage:</span>
-                                 <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>altar &lt;hex code&gt;</div>
-                              </div>
-                              <div class="cmdExample cmdMain">
-                                 <span class="cmdCompTitle">Example:</span>
-                                 <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>altar or altar @Witchie#0999</div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="cmd">
-                        <div class="cmdComps">
-                           <span class="cmdPrefix"><%= prefix %></span>bio-set
-                           <div class="cmdDesc">set your altar bio</div>
-                        </div>
-                        <div class="cmdData">
-                           <div class="cmdComps2">
-                              <div class="cmdUsage cmdMain">
-                                 <span class="cmdCompTitle">Usage:</span>
-                                 <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>bio-set [bio must be less than 40 characters long!]</div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="cmd">
-                        <div class="cmdComps">
-                           <span class="cmdPrefix"><%= prefix %></span>bio-reset
-                           <div class="cmdDesc">reset your altar bio</div>
-                        </div>
-                        <div class="cmdData">
-                           <div class="cmdComps2">
-                              <div class="cmdUsage cmdMain">
-                                 <span class="cmdCompTitle">Usage:</span>
-                                 <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>bio-reset</div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>                        
-                     <div class="cmd">
-                        <div class="cmdComps">
-                           <span class="cmdPrefix"><%= prefix %></span>bio-check 
-                           <div class="cmdDesc">checks your altar bio</div>
-                        </div>
-                        <div class="cmdData">
-                           <div class="cmdComps2">
-                              <div class="cmdUsage cmdMain">
-                                 <span class="cmdCompTitle">Usage:</span>
-                                 <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>bio-check</div>
-                              </div>
-                           </div>                           
-                        </div>
-                     </div>
-                  </div>
-                  <div class="cmds">
-                     <div class="cmdCategory" id="fun">
-                        <h5 class="cmdCategoryName">Occult</h5>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>altar
-                              <div class="cmdDesc">Send your altar or mentioned user alter</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>altar &lt;hex code&gt;</div>
-                                 </div>
-                                 <div class="cmdExample cmdMain">
-                                    <span class="cmdCompTitle">Example:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>altar or altar @Witchie#0999</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>affirmations
-                              <div class="cmdDesc">sends daily affirmation</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>affirmation</div>
-                                 </div>
-                                 <div class="cmdExample cmdMain">
-                                    <span class="cmdCompTitle">Example:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>affirm</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>weekly
-                              <div class="cmdDesc">sends weekly affirmations</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>weekly</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>manifest
-                              <div class="cmdDesc">manifest a random amount of moonjuice</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>manifest</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>wish
-                              <div class="cmdDesc">sends random amount of starcandy</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>wish</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>buy
-                              <div class="cmdDesc">buy items with moon soda</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>buy [item]</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>moonshop
-                              <div class="cmdDesc">buy items from our moon shop</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>moonshop [item]</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>petbuy
-                              <div class="cmdDesc">buy a pet!</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>petbuy [item]</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>    
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>petshop
-                              <div class="cmdDesc">view pets avaliable to buy!</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>petshop</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>   
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>starcandyshop
-                              <div class="cmdDesc">View the star candy shop</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>starcandyshop</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>vote
-                              <div class="cmdDesc">Vote for Nixie</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>vote</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>   
-                     </div>
-                     <div class="cmdCategory" id="games">
-                        <h5 class="cmdCategoryName">Spiritual</h5>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>witches runes
-                              <div class="cmdDesc">Ask yourself a question and then type in the command to generate one of the 13 witches runes!</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>wrune</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>pendulum
-                              <div class="cmdDesc">sends you a reply! Only ask yes and/or no questions!</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>pendulum [yes or no question]</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>oracle
-                              <div class="cmdDesc">Sends a randomized reply. A sentence you must decipher for yourself. Only ask, who, what, how and why questions!</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>oracle [question]</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>                        
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>Flowers 
-                              <div class="cmdDesc">coming soon!</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>Crystals
-                              <div class="cmdDesc">Coming soon!</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="cmdCategory" id="server">
-                        <h5 class="cmdCategoryName">Misc</h5>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>moon
-                              <div class="cmdDesc">Send current moon phase + info</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>moon</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>Horoscope
-                              <div class="cmdDesc">Gives you details on the specified sign and days horoscope with a description, color, lucky number and time!</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>Horoscope [sign | today,tommorow or yesterday]</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>resources
-                              <div class="cmdDesc">gives you two embeds with link texts to resourceful blog sites!</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>resources</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>                        
-                     </div>
-                     <div class="cmdCategory" id="moderation">
-                        <h5 class="cmdCategoryName">Info</h5>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>ban
-                              <div class="cmdDesc">Ban one or more people from teh server eg.</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>ban &lt;members&gt; [reason]</div>
-                                 </div>
-                                 <div class="fullDesc cmdMain">
-                                    <span class="cmdCompTitle">More Info:</span>
-                                    <div class="exComp">Just like a massban command (an aliase to this command), you can ban more than one person by seperating the names with a space. (Like in example below)</div>
-                                 </div>
-                                 <div class="cmdExample cmdMain">
-                                    <span class="cmdCompTitle">Example:</span>
-                                    <div class="exComp">
-                                        <span class="cmdsPrefix"><%= prefix %></span>ban <span class="userMention">@user</span> Spamming<br>
-                                        <span class="cmdsPrefix"><%= prefix %></span>ban <span class="userMention">@user</span> <span class="userMention">@user2</span> Spamming
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>clear
-                              <div class="cmdDesc">Clear a number of messages you want from a channel or users</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>clear &lt;limit&gt; [members]</div>
-                                 </div>
-                                 <div class="fullDesc cmdMain">
-                                    <span class="cmdCompTitle">More Info:</span>
-                                    <div class="exComp">Clear messages from everyone in the current channel or just from one or more people<br>You can clear from more than one person by speratin their names/IDs/ping with a space</div>
-                                 </div>
-                                 <div class="cmdExample cmdMain">
-                                    <span class="cmdCompTitle">Examples:</span>
-                                    <div class="exComp">
-                                        <span class="cmdsPrefix"><%= prefix %></span>clear 10<br>
-                                        <span class="cmdsPrefix"><%= prefix %></span>clear 10 <span class="userMention">@user</span><br>
-                                        <span class="cmdsPrefix"><%= prefix %></span>clear 10 <span class="userMention">@user</span> <span class="userMention">@user2
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>kick
-                              <div class="cmdDesc">Kick one or more people</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>kick &lt;members&gt; &lt;reason&gt;</div>
-                                 </div>
-                                 <div class="fullDesc cmdMain">
-                                    <span class="cmdCompTitle">More Info:</span>
-                                    <div class="exComp">You can kick more than one people by seperating their names/id/pings with a space eg. (look at the example below)<br>'masskick' command is just an aliase to command.</div>
-                                 </div>
-                                 <div class="cmdExample cmdMain">
-                                    <span class="cmdCompTitle">Example:</span>
-                                    <div class="exComp">
-                                       <span class="cmdsPrefix"><%= prefix %></span>kick <span class="userMention">@user</span> Spamming<br>
-                                        <span class="cmdsPrefix"><%= prefix %></span>kick <span class="userMention">@user</span> <span class="userMention">@user2</span> Spamming
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>tempban
-                              <div class="cmdDesc">Ban a member and (s)he'll be unbanned after the seconds given</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>tempban &lt;members&gt; &lt;seconds&gt; &lt;reason&gt;</div>
-                                 </div>
-                                 <div class="cmdExample cmdMain">
-                                    <span class="cmdCompTitle">Example:</span>
-                                    <div class="exComp">
-                                       <span class="cmdsPrefix"><%= prefix %></span>tempban <span class="userMention">@user</span> 5 Spamming<br>
-                                       <span class="cmdsPrefix"><%= prefix %></span>tempban <span class="userMention">@user</span> <span class="userMention">@user2</span> 5 Spamming
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>timedban
-                              <div class="cmdDesc">Ban one or more people from the server after certain seconds</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>timedban &lt;members&gt; &lt;seconds&gt; &lt;reason&gt;</div>
-                                 </div>
-                                 <div class="cmdExample cmdMain">
-                                    <span class="cmdCompTitle">Example:</span>
-                                    <div class="exComp">
-                                        <span class="cmdsPrefix"><%= prefix %></span>timedban <span class="userMention">@user</span> 5 Spamming<br>
-                                        <span class="cmdsPrefix"><%= prefix %></span>timedban <span class="userMention">@user</span> <span class="userMention">@user2</span> 5 Spamming
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>timedkick
-                              <div class="cmdDesc">Kick one or more people from the server after certain seconds</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>timedkick &lt;members&gt; &lt;seconds&gt; &lt;reason&gt;</div>
-                                 </div>
-                                 <div class="cmdExample cmdMain">
-                                    <span class="cmdCompTitle">Example:</span>
-                                    <div class="exComp">
-                                        <span class="cmdsPrefix"><%= prefix %></span>timedkick <span class="userMention">@user</span> 5 Spamming<br>
-                                        <span class="cmdsPrefix"><%= prefix %></span>timedkick <span class="userMention">@user</span> <span class="userMention">@user2</span> 5 Spamming
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cmd">
-                           <div class="cmdComps">
-                              <span class="cmdPrefix"><%= prefix %></span>unban
-                              <div class="cmdDesc">Unban one or more banned members by their ID</div>
-                           </div>
-                           <div class="cmdData">
-                              <div class="cmdComps2">
-                                 <div class="cmdUsage cmdMain">
-                                    <span class="cmdCompTitle">Usage:</span>
-                                    <div class="exComp"><span class="cmdsPrefix"><%= prefix %></span>unban &lt;member ID&gt; [reason]</div>
-                                 </div>
-                                 <div class="cmdExample cmdMain">
-                                    <span class="cmdCompTitle">Example:</span>
-                                    <div class="exComp">
-                                        <span class="cmdsPrefix"><%= prefix %></span>unban 12345<br>
-                                        <span class="cmdsPrefix"><%= prefix %></span>unban 12345 98765<br>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>       
-               </main>
-            </div>
-         </div>
-      </div> 
+
+      <ul id="rcornersbody">
+         <p><i>Cabot bot offers trusted witchcraft, Occult and spiritualism information. Cabot has brought your divination tools to Discord! You can now divinate with Cabot; The occult mouse. Cabot offers many divination tools to use; Tarot, Runes, 8ball, Crystals, Coins, Fortunes, and many more! Perfect for on-the-go divination and especially for broom closet witches who can't buy or have physical divination tools.</i></p>
+         <li>Cabot offers a wide variety of divination tools from; Tarot, Runes, Bibliomancy, Pendulum, I-Ching, Geomancy, Fortunes, Dice, Coins, 8ball, Horoscopes, and Crystals</li><br></br>
+         <li>Cabot has a one of a kind database. The database is constantly expanding.
+            <br/>
+           <ul>
+             <li>Botanical Database</li>
+             <li>Crystal Database</li>
+             <li>Color Database</li>
+           </ul><br/>
+         </li><br/>
+         <li>Cabot offers other occult info such as color correspondences, current moon phase info and facts!</li></br></br>
+         <li>Cabot is expanding its knowledge with adding spiritualism! Angel numbers added and more to come!!</li>
+      </ul>
+         <p style="text-align: center; font-size: 17px; display: flex; justify-content: center;"><i>Commands</i></p>
+      <ul id="rcornersbody2">
+         <li>8ball
+           <ul>
+             <li>Command Description: Magic 8ball will answer your question | Make sure you focus your intent when asking a question!​</li>
+             <li>Usage: <code>/8ball question:your-question-here</code> </li>
+             <li>Example: <code>/8ball question:is cabot the best bot?</code></li>
+           </ul>
+         </li>
+           <li>Bibliomancy
+           <ul>
+             <li>Command Description: Get a religious text script from a random or specific source​</li>
+             <li>Usage: <code>/bibliomancy type:biblical/spiritual/random form:text/embed</code></li>
+             <li>Example 1: Biblical; <code>/bibliomancy type:biblical form:text</code> - Will send you a script from the bible in text form<br>
+       
+               <code>/bibliomancy type:biblical form:embed</code> - Will send you a script from the bible in embed form</li>
+           <li>Example 2: Spiritual; <code>/bibliomancy type:spiritual form:text</code> - Will send you a script from a sprirtual book, source or quote in text form<br>
+       
+            <code>/bibliomancy type:spiritual form:embed</code> - Will send you a script from a sprirtual book, source or quote in embed form</li>
+           <li>Example 3: Random; <code>/bibliomancy type:random form:text</code> - Will send you a random script in text form<br>
+       
+            <code>/bibliomancy type:random form:embed</code> - Will send you a random script in embed form</li>
+           </ul>
+         </li>
+           <li>Cast Runes
+           <ul>
+             <li>Command Description: Get a divination rune casting reading of 4 runes​</li>
+             <li>Usage: <code>/castrunes</code></li>
+             <li>Info: Use <code>/rune search rune:rune-name</code> to search for the runes detailed info you got on your casting!</li>
+           </ul>
+         </li>
+           </li>
+           <li>Coin Flip
+           <ul>
+             <li>Command Description: Flip a enchanted magical cabot coin. Heads or Tails?​</li>
+             <li>Usage: <code>/coinflip</code></li>
+             <li>Info: Try associating heads and tails to different correspondences! Ex: heads = yes | tails = no</li>
+           </ul>
+         </li>
+             <li>Facts
+           <ul>
+             <li>Command Description: Get occult facts and tips!​</li>
+             <li>Usage: <code>/facts</code></li>
+             <li>Info: Get facts or Tips relating to the occult!</li>
+           </ul>
+         </li>
+           <li>Find
+           <ul>
+             <li>Command Description: Search from Botanicals, Crystals, and Colors!​</li>
+             <li>Usage: <code>/find botanical/crystal/color</code></li>
+             <li>Info: Botanical: Sends a specific or random botanical from Cabot's database
+       
+       Crystal: Sends a specific or random crystal from Cabot's database
+       
+       Color: Sends a specific color from Cabot's database</li>
+           </ul>
+         </li>
+           <li>Fortune
+           <ul>
+             <li>Command Description: Get a random fortune from Cabot​</li>
+             <li>Usage: <code>/fortune</code></li>
+             <li>Info: Get a fortune!</li>
+           </ul>
+         </li>
+           <li>Geomancy
+           <ul>
+             <li>Command Description: Get a divination geomancy card reading​</li>
+             <li>Usage: <code>/geomancy</code></li>
+             <li>Info: Get a detailed geomancy card reading with corresponcences + more</li>
+           </ul>
+         </li>
+             <li>Horoscope
+           <ul>
+             <li>Command Description: Get your daily astrological horoscope​</li>
+             <li>Usage: <code>/horoscope zodiac:aquarius/aries/cancer/capricorn/gemini/leo/libra/pisces/sagittarius/scorpio/taurus/virgo day:yesterday/today/tomorrow</code></li>
+             <li>Example: aquarius;<br>
+               <code>/horoscope zodiac:aquarius day:yesterday</code> - Yesterdays<br>
+       <code>/horoscope zodiac:aquarius day:today</code> - Todays<br>
+       <code>/horoscope zodiac:aquarius day:tomorrow</code> - Tomorrows</li>
+           </ul>
+         </li>
+           <li>I-ching
+           <ul>
+             <li>Command Description: Indepth i-ching divination reading​</li>
+             <li>Usage: <code>/i-ching</code></li>
+             <li>Info: The I Ching illuminates the principles of the Tao, the universal flow that underlies all action and permeates all being.
+       These principles are most easily measured in the material world by yin and yang, the polar opposites.
+       Using: I-Ching Wilhelm/Baynes translation</li>
+           </ul>
+         </li>
+           <li>Moon
+           <ul>
+             <li>Command Description: Get the moons current phase, location, correspondence and more​</li>
+             <li>Usage: <code>/moon</code></li>
+             <li>Info: Moon stuffs :3</li>
+           </ul>
+         </li>
+           <li>Numerology
+           <ul>
+             <li>Command Description: Angel numbers, Calculator + More!​</li>
+             <li>Usage: <code>/numerology</code></li>
+             <li>Example: Numerology Search:<br>
+       
+               <code>/numerology search number:number</code>- Search for a specific angel number<br>
+       Numerology Calculate:<br>
+       <code>/numerology calculate birthday:birthday</code> - Calculate your personal Angel Number!</li>
+           <li>Info: <strong>When calculating make sure your birthday is set in numerical value</strong> - ex:june 6, 2000 = 06062000</li>
+           </ul>
+         </li>
+             <li>Pendulum
+           <ul>
+             <li>Command Description: Pendulum divination reading​</li>
+             <li>Usage: <code>/pendulum question:your-question</code></li>
+           <li>Info: Enter a yes or no question for pendulum to answer</li>
+           </ul>
+         </li>
+           <li>Roll
+           <ul>
+             <li>Command Description: Roll a die​</li>
+             <li>Usage: <code>/roll limit:number-up-to-500</code></li>
+           <li>Info: Rolls a 6 sided die, Limit option is optional, makes max sides smaller or larger</li>
+           </ul>
+         </li>
+           <li>Rune
+           <ul>
+             <li>Command Description: Get a divination rune reading from a specifc type or search a rune​</li>
+             <li>Usage: <code>/rune</code></li>
+           <li>Info: Rune Search:<br>
+            <code>/rune search rune:<rune></code> - Search for a specific rune, currently Futhark only<br>
+       Rune Random:<br>
+       <code>/rune random type:<futhark/ogham/witches></code> - Get a random run from a specific type, Futhark, Ogham or Witches!</li>
+           </ul>
+         </li>
+           <li>Send
+           <ul>
+             <li>Command Description: Send a suggestion, report or feedback to DEVELOPER OF CABOT! not server!​</li>
+             <li>Usage: <code>/send</code></li>
+           <li>Info: Send Suggestion:<br>
+       
+            <code>/send suggestion</code> - This will send you a model button to click on and there you will be prompted to write a suggestion!<br>
+       Send Report:<br>
+       <code>/send report</code> - This will send you a model button to click on and there you will be prompted to write a suggestion!<br>
+       Send Feedback:<br>
+       <code>/send feedback</code> - This will send you a model button to click on and there you will be prompted to write a suggestion!</li>
+           </ul>
+         </li>
+             <li>Tarot
+           <ul>
+             <li>Command Description: Get a divination tarot reading from random or specific deck, pull and form​</li>
+             <li>Usage: <code>/send</code></li>
+           <li>Info: Tarot Specific<br>
+       
+            <code>/tarot specific deck: pull:1/3 form:text/embed</code> - You get to chose the deck, pull count, and form!<br>
+       Tarot Random:<br>
+       <code>/tarot random form:text/embed pull:1/3</code> - You get a pull from a random deck!</li>
+           <li>Decks: <code>Chees Pixel Tarot, Burnt Wonderland Tarot, Alch tarot, Alchemist Tarot, Occult Tarot, Angel Tarot, Davinci Tarot, Forest Tarot, Manga Tarot, Gilded Tarot</code</li>
+           </ul>
+         </li>
+       </ul>  
+
     <!-- <h1 style="position: fixed; top: 50%; left: 50%;">Soon</h1> -->
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="src/js/now-ui-kit.min.js"></script>
+  <style>
+   #rcornersbody  {
+     border-radius: 55px;
+     background: #EEB8B6;
+     padding: 50px;
+     color: black;
+     text-align: left;
+     min-height: auto;
+     min-width: auto;
+   }
+   #rcornersbody2  {
+     border-radius: 55px;
+     background: #EEB8B6;
+     padding: 50px;
+     color: black;
+     text-align: left;
+     min-height: auto;
+     min-width: auto;
+   }
+ </style>
 </body>
 </html>
