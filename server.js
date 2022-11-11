@@ -69,9 +69,6 @@ app.get('/credits', (req, res) => {
 app.get('/blog', (req, res) => {
   res.render('comingSoon')
 })
-app.get('/library', (req, res) => {
-  res.render('comingSoon')
-})
 app.get('/api', (req, res) => {
   res.render('comingSoon')
 })
