@@ -1,7 +1,7 @@
 {
-  "name": "cabot-web-remake",
+  "name": "cabot-website",
   "version": "1.0.0",
-  "description": "Amazing website with good UI design for new Discord bots, designed with Bootstrap & now-ui-kit available in English and Arabic.",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "node": "node server.js",
