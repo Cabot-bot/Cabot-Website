@@ -30,47 +30,47 @@ app.get('/', (req, res) => {
 
 //pages
 app.get('/about', (req, res) => {
-  res.sendFile('about.html', {
+  res.sendFile('pages/about.html', {
       root: path.join(__dirname, './')
   })
 })
 app.get('/features', (req, res) => {
-  res.sendFile('features.html', {
+  res.sendFile('pages/features.html', {
       root: path.join(__dirname, './')
   })
 })
 app.get('/commands', (req, res) => {
-  res.sendFile('features.html', {
+  res.sendFile('pages/features.html', {
       root: path.join(__dirname, './')
   })
 })
 app.get('/privacy', (req, res) => {
-  res.sendFile('privacy.html', {
+  res.sendFile('pages/privacy.html', {
       root: path.join(__dirname, './')
   })
 })
 app.get('/terms', (req, res) => {
-  res.sendFile('terms.html', {
+  res.sendFile('pages/terms.html', {
       root: path.join(__dirname, './')
   })
 })
 app.get('/legal', (req, res) => {
-  res.sendFile('legal.html', {
+  res.sendFile('pages/legal.html', {
       root: path.join(__dirname, './')
   })
 })
 app.get('/credits', (req, res) => {
-  res.sendFile('credits.html', {
+  res.sendFile('pages/credits.html', {
       root: path.join(__dirname, './')
   })
 })
 
 //coming soon
 app.get('/blog', (req, res) => {
-  res.render('comingSoon')
+  res.render('pages/comingSoon')
 })
 app.get('/api', (req, res) => {
-  res.render('comingSoon')
+  res.render('pages/comingSoon')
 })
 
 

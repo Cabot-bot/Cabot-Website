@@ -12,9 +12,9 @@
         </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link type="text/css" rel="stylesheet" href="src/css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="src/css/docs.css">
-    <link type="text/css" rel="stylesheet" href="src/css/now-ui-kit.css">
+    <link type="text/css" rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../src/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../src/css/now-ui-kit.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
@@ -22,24 +22,21 @@
     <meta property="og:type" content="website">
     <meta property=”og:site_name” content="cabot-bot.xyz"/>
     <meta property="og:url" content="https://cabot-bot.xyz/">
-    <meta property="og:title" content="Cabot - DMCA Policy">
-    <meta property="og:description" content="Cabot - DMCA Policy | Digital Millennium Copyright Act">
-    <meta property="og:image" content="http://cabot-bot.xyz/assets/img/Cabot_header.png">
-    <meta property="og:image:type" content="image/png" />
-    <meta name="og:image:alt" content="Cabot - DMCA Policy">
+    <meta property="og:title" content="Cabot - Moon | Current Moon Data, Correspondences and more!">
+    <meta property="og:description" content="Get the Moon's current data, Correspondences, placement and more from cabot's moon calculator API">
     <meta name="theme-color" content="#EEB8B6">
-    <meta name="twitter:card" content="summary_large_image">
 
-    <title>Cabot - DMCA Policy</title>
+    <title>Cabot - Moon</title>
     <link rel="shortcut icon" href="https://i.ibb.co/YkwPRzF/redise-o8.png" />
+    <script src="../api/mooncalc.js"></script>  
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg bg-transparent">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="src/assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
+        <img src="../src/assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
     </button>
-    <img src="src/assets/rediseño8.png" width="50" height="50">
+    <img src="../src/assets/rediseño8.png" width="50" height="50">
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -71,6 +68,7 @@
                 <a class="dropdown-item" href="/legal">Legal</a>
                 <a class="dropdown-item" href="/terms">Terms of Service</a>
                 <a class="dropdown-item" href="/privacy">Privacy Policy</a>
+                <a class="dropdown-item" href="/dmca">DMCA Policy</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="/credits">Credits</a>
             </div>
@@ -81,66 +79,46 @@
         <button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;" href="https://discord.com/api/oauth2/authorize?client_id=882064634180427847&permissions=157572000833&scope=bot%20applications.commands">INVITE</button>
     </div>
 </nav>
-<h1 class="title" id="welcome">
-   Welcome to Cabot's DMCA Policy!
-   <a class="hyperlink" href="#welcome">
-    <div name="welcome"></div>
-   </a>
-</h1>
-<span class="paragraph-3chiht">Effective: August 12, 2022</span>
-<br/>
-<h1 class="title" id="cabot-dmca">
-    Removing Content From Cabot Archives / DMCA Policy
-    <a class="hyperlink" href="#cabot-dmca">
-        <div name="cabot-dmca"></div>
-    </a>
-</h1>
-<span class="paragraph-3chiht">
-    <a href="https://cabot-bot.xyz/terms"> Cabot</a> respects the intellectual property of others.<br><br>
-    If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible on this site, you may notify our copyright agent, as set forth in the Digital Millennium Copyright Act of 1998 (DMCA). For your complaint to be valid under the DMCA, you must provide the following information when providing notice of the claimed copyright infringement:
-</span>
-    <h2 class="iteltitle" id="information-you-provide-to-us">
-        <i>Information you provide to us</i>
-        <a class="hyperlink" href="#information-you-provide-to-us">
-            <div name="information-you-provide-to-us"></div>
-        </a>
-    </h2>
-    <ul>
-        <br/>
-        <li>
-            A physical or electronic signature of a person authorized to act on behalf of the copyright owner Identification of the copyrighted work claimed to have been infringed
-        </li>
-        <br/>
-        <li>
-            Identification of the material that is claimed to be infringing or to be the subject of the infringing activity and that is to be removed
-        </li>
-        <br/>
-        <li>
-            Information reasonably sufficient to permit the service provider to contact the complaining party, such as an address, telephone number, and, if available, an electronic mail address
-        </li>
-        <br/>
-        <li>
-            A statement that the complaining party "in good faith believes that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or law"
-        </li>
-        <br/>
-        <li>
-            A statement that the "information in the notification is accurate", and "under penalty of perjury, the complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed"
-        </li>
-        <br/>
-        <br/>
-            <b>The above information must be submitted as a written or emailed notification to the following Designated Agent: <a href= "mailto:cabot.bot.xyz@gmail.com">Email</a></b>
-    </ul>
+<div class="features">
+    <div class="title">Cabot’s Moon Calculator</div>
+    <div class="cards">
+        <div class="card" style="width: 50rem;">
+            <div class="card-body">
+                <script>
+                    var date = new Date();
+                    const moonstat = MoonCalc.datasForDay(date);
+                </script>
+                <center><a class="btn btn-primary btn-lg" target="_blank" type="button" role="button" onclick="myFunction()">Show stats</a></center>
+                
+                <center><p class="subtitle" id="Emoji"></p></center>
+                <center><p class="subtitle" id="Date"><p class="subtitle" id="Age"><p class="subtitle" id="Distance"><p class="subtitle" id="Trajectory"><p class="subtitle" id="Phase"><p class="subtitle" id="Description">Click on "Show stats" to be show current moon stats here</p></p></p></p></p></p></center>
+                <p><script>
+                    function myFunction() { 
+                    document.getElementById("Date").innerHTML = "Date: " + date;
+                    document.getElementById("Age").innerHTML = "Age: " + moonstat.age;
+                    document.getElementById("Distance").innerHTML = "Distance: " + moonstat.distance;
+                    document.getElementById("Phase").innerHTML = "Phase: " + moonstat.phase;
+                    document.getElementById("Description").innerHTML = "Description: " + moonstat.description;
+                    document.getElementById("Emoji").innerHTML = moonstat.emoji;
+                    document.getElementById("Trajectory").innerHTML = "Trajectory: " + moonstat.trajectory;
+                  }
+                </script></p>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="page_end">
     <div class="footer">
         <div class="bot-footer">
-            <img src="src/assets/rediseño8.png" width="150px"><br />
             Copyright © Witchie#0999 - 2022
         </div><br/>
+        <div class="nouridio">website designed by <a href="https://nouridio.com"> nouridio</a><br><br><br><br><br>Manipulated by  Witchie#0999<br><br><br><br><br>Cabot not affiliated with <a href="https://discord.com"> Discord</a></div>
+        <br>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="src/js/now-ui-kit.min.js"></script>
+<script src="../src/js/now-ui-kit.min.js"></script>
 </body>
 </html>
