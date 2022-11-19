@@ -7,9 +7,13 @@
     "node": "node server.js",
     "test": "nodemon server.js"
   },
-  "resolutions": {
-    "glob-parent": "^6.0.1"
- },
+    "resolutions": {
+    "glob-parent": "^6.0.2"
+  },
+  "overrides": {
+    "chokidar": "3.5.3",
+    "glob-parent": "6.0.2"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
