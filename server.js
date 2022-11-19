@@ -1,23 +1,13 @@
-const { readdirSync } = require('fs');
-const fs = require('fs');
-const http = require("http");
 const domain = "cabot-bot.xyz";
-
 const express = require('express');
 const app = express();
 const path = require('path');
 const port = process.env.PORT;
 
-// Set view engine as EJS
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
-
-//static files
-// Require static assets from public folder
 app.use(express.static(path.join(__dirname, 'src')));
 
-// Set 'views' directory for any views 
-// being rendered res.render()
 app.set('views', path.join(__dirname, 'src'));
 
 //main
@@ -26,7 +16,6 @@ app.get('/', (req, res) => {
       root: path.join(__dirname, './')
   })
 })
-
 
 //pages
 app.get('/about', (req, res) => {
@@ -106,8 +95,6 @@ app.get("*", (req, res) => {
     res.render(res, req, "404.html");
   }
 });
-
-
 
 app.listen(port, () => { 
   console.log(`Dashboard is up and running on port ${port}`)
