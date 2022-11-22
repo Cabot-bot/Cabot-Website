@@ -2,10 +2,10 @@
   "name": "cabot-website",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.html",
   "scripts": {
-    "node": "node server.js",
-    "test": "nodemon server.js"
+    "node": "node index.html",
+    "test": "nodemon index.html"
   },
     "resolutions": {
     "glob-parent": "^6.0.2"
