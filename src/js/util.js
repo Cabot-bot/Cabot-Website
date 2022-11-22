@@ -95,8 +95,12 @@
 			}, userConfig);
 
 			// Expand "target" if it's not a jQuery object already.
-				if (typeof config.target != 'jQuery')
-					config.target = $(config.target);
+			jQuery.fn.copyText = function(options) {
+				// GOOD may not evaluate `options.sourceSelector` as HTML
+				var source = jQuery.find(options.sourceSelector),
+				    text = source.text();
+				jQuery(this).text(text);
+			}
 
 		// Panel.
 
