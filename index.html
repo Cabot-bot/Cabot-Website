@@ -137,7 +137,15 @@
         </div>
         <div class="card statistic" style="width: 18rem;">
             <div class="card-body">
-                <iframe id='kofiframe' src='https://ko-fi.com/cabot/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;background:#f9f9f9;' height='712' title='cabot'><iframe>
+                <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+                <script>
+                  kofiWidgetOverlay.draw('cabot', {
+                    'type': 'floating-chat',
+                    'floating-chat.donateButton.text': 'Support me',
+                    'floating-chat.donateButton.background-color': '#ff38b8',
+                    'floating-chat.donateButton.text-color': '#fff'
+                  });
+                </script>
             </div>
         </div>
     </div>
