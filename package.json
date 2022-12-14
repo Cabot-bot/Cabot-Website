@@ -7,7 +7,7 @@
     "node": "node index.html",
     "test": "nodemon index.html"
   },
-    "resolutions": {
+  "resolutions": {
     "glob-parent": "^6.0.2"
   },
   "overrides": {
