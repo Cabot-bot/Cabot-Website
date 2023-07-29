@@ -9,6 +9,13 @@ body {
     font-size: 16px;
 }
 
+a {
+    color: #EEB8B6;
+}
+a:hover {
+    color: #EEB8B6;
+}
+
 .nav-link {
      font-size: 14px !important;
      background: transparent !important;
